@@ -1,3 +1,13 @@
 .center{
     text-align: center;
 }
+
+.fill_back{
+    background: black;
+}
+
+hr{
+   border-color: white;
+   background-color: white;
+   color: white;
+}
