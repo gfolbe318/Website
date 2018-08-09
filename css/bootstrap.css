@@ -35,6 +35,7 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+
 *,
 *::before,
 *::after {
@@ -65,9 +66,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  text-align: left;
-  background-color: #fff;
-}
+  text-align: left;}
 
 [tabindex="-1"]:focus {
   outline: 0 !important;
@@ -3892,6 +3891,7 @@ input[type="button"].btn-block {
 
 .nav-tabs {
   border-bottom: 1px solid #dee2e6;
+  margin: auto;
 }
 
 .nav-tabs .nav-item {
@@ -3949,6 +3949,7 @@ input[type="button"].btn-block {
   -ms-flex-positive: 1;
   flex-grow: 1;
   text-align: center;
+  margin: auto;
 }
 
 .tab-content > .tab-pane {
@@ -3970,7 +3971,6 @@ input[type="button"].btn-block {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  display: inline-block;
 }
 
 .navbar > .container,
