@@ -3970,6 +3970,7 @@ input[type="button"].btn-block {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  display: inline-block;
 }
 
 .navbar > .container,
@@ -5810,6 +5811,7 @@ button.close {
 
 .carousel {
   position: relative;
+  margin: auto;
 }
 
 .carousel-inner {
