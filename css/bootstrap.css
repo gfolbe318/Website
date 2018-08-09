@@ -66,7 +66,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: rgb(112, 174, 231);
 }
 
 [tabindex="-1"]:focus {
@@ -3890,22 +3890,18 @@ input[type="button"].btn-block {
   color: #6c757d;
 }
 
-.nav-tabs {
-  border-bottom: 1px solid #dee2e6;
-}
-
 .nav-tabs .nav-item {
-  margin-bottom: -1px;
+  margin-bottom: 5px;
 }
 
 .nav-tabs .nav-link {
   border: 1px solid transparent;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
 }
 
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  border-color: #e9ecef #e9ecef #dee2e6;
+  background-color: rgb(54, 119, 180);
 }
 
 .nav-tabs .nav-link.disabled {
@@ -3923,7 +3919,7 @@ input[type="button"].btn-block {
 
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
-  border-top-left-radius: 0;
+  border-top-left-radius: 10px;
   border-top-right-radius: 0;
 }
 
@@ -3934,7 +3930,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #007bff;
+  background-color: black;
 }
 
 .nav-fill .nav-item {
