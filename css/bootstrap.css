@@ -66,9 +66,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  text-align: left;
-  background-color: rgb(126, 175, 243);
-}
+  text-align: left;}
 
 [tabindex="-1"]:focus {
   outline: 0 !important;
@@ -3973,7 +3971,6 @@ input[type="button"].btn-block {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  text-align: right;
 }
 
 .navbar > .container,
@@ -6591,8 +6588,8 @@ button.bg-dark:focus {
 }
 
 .justify-content-center {
-  -ms-flex-pack: center important;
-  justify-content: center important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
 }
 
 .justify-content-between {
