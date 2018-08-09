@@ -10,9 +10,15 @@ ul.nav li.active a {
   color: black !important;
 }
 
-.container-no-pad{
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
+.info-page{
+
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  height: 100%;
+  border: 2px solid black;
+  height:auto;
+
         
 }
