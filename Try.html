@@ -20,61 +20,98 @@
 	<h4>-A Personal Website-</h4>
 </div>
 
-<div class="container">
+<div class="row">
+	<div class="container">
 
-	<ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-		<li class="nav-item">
-			<a class="nav-link" id="aboutMe-tab" data-toggle="tab" href="#aboutMe" role="tab" aria-controls="aboutMe" aria-selected="false">Home</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link active" id="Projects-tab" data-toggle="tab" href="#Projects" role="tab" aria-controls="Projects" aria-selected="true">Projects</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" id="resumeCV-tab" data-toggle="tab" href="#resumeCV" role="tab" aria-controls="resumeCV" aria-selected="false">Resume/CV</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link" id="contactMe-tab" data-toggle="tab" href="#contactMe" role="tab" aria-controls="contactMe" aria-selected="false">Contact Me</a>
-		</li>
-	</ul>
-	<div class="tab-content info-page" id="myTabContent">
+		<ul class="nav nav-tabs nav-justified flex-column flex-sm-row" id="myTab" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link" id="aboutMe-tab" data-toggle="tab" href="#aboutMe" role="tab" aria-controls="aboutMe" aria-selected="false">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active" id="Projects-tab" data-toggle="tab" href="#Projects" role="tab" aria-controls="Projects" aria-selected="true">Projects</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="resumeCV-tab" data-toggle="tab" href="#resumeCV" role="tab" aria-controls="resumeCV" aria-selected="false">Resume/CV</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="contactMe-tab" data-toggle="tab" href="#contactMe" role="tab" aria-controls="contactMe" aria-selected="false">Contact Me</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="container">
+		<div class="tab-content info-page" id="myTabContent">
 			<div class="tab-pane fade pad-10px text-center" id="aboutMe" role="tabpanel" aria-labelledby="aboutMe-tab">
 				<strong>Hi! Welcome to my website!</strong>
 				<br>
 				<p>My name is Garrett Folbe and I am junior computer science major at the University of Michigan. 
-					This website is designed to give you a better idea of my indentity as both a student, and as 
-					a person. Feel free to look around! </p>
+						This website is designed to give you a better idea of my indentity as both a student, and as 
+						a person. Feel free to look around! 
+				</p>
 			</div>
-			<div class="tab-pane fade pad-10px show active" id="Projects" role="tabpanel" aria-labelledby="Projects-tab">
-				<h3 class="text-center pad-10px">Here are some of the projects I have completed independently</h3>
-				<hr>
-				<h4>Checkers</h4>
-				<div class="row">
-					<div class ="col-sm-6">
-							<img src="resources/checkers.jpg" class="img-fluid">
-						</div>
-					<div class="col-sm-6">
-						<ul class="plain-ul">
-							<li><strong>Description:</strong></li>
-							<li><strong>Written in:</strong></li>
-							<li><strong>Additional Information:</strong></li>
-
-							button: github
-							<br>
-							button: download Source Code
-						</ul>
-
-						</div>
+		
+			
+			<div class="tab-pane fade show active" id="Projects" role="tabpanel" aria-labelledby="Projects-tab">
+				<div class="row text-center">
+					<div class="col-sm-12">
+						<h1 class="pad-header">Independent Projects</h1>
 					</div>
 				</div>
+				<hr>
+
+				<!--Checkers-->
+				<div class="row">
+					<div class="col-sm-12 sub-header">
+						<h2>Checkers</h2>
+					</div>
+					<div class ="col-sm-4 justify-content-center">
+						<img src="resources/checkers.jpg" class="img-thumbnail img-fluid rounded mx-auto d-block">
+					</div> 
+					
+					<div class="col-sm-8">
+						<ul class="plain-ul">
+							<li><strong>Description: </strong>Fully-implemented two-player interactive game of Checkers</li>
+							<li><strong>Written in: </strong>C++</li>
+							<li><strong>Code Features: </strong>ADTs, enumerations, user-friendly interface using GLUT library</li>
+							<li><strong>Additional Information: </strong>Code was written with a partner at MHacks X Hackathon and shared using git</li>
+						</ul>
+						<a class="a-button btn btn-primary btn-lg" href= "https://github.com/gfolbe318/Checkers" target="_blank">Repository</a>
+					</div>
 				</div>
+
+				<hr>
+
+			<!--/Checkers-->
+				
+			<!--Checkers-->
+			<div class="row">
+					<div class="col-sm-12 sub-header">
+						<h2>Checkers</h2>
+					</div>
+					<div class ="col-sm-4 justify-content-center">
+						<img src="resources/checkers.jpg" class="img-thumbnail img-fluid rounded mx-auto d-block">
+					</div> 
+					
+					<div class="col-sm-8">
+						<ul class="plain-ul">
+							<li><strong>Description: </strong>Fully-implemented two-player interactive game of checkers</li>
+							<li><strong>Written in: </strong>C++</li>
+							<li><strong>Code Features: </strong>ADTs, enumerations, user-friendly interface using GLUT library</li>
+							<li><strong>Additional Information: </strong>Code was written with a partner at MHacks X Hackathon and shared using git</li>
+						</ul>
+						<a class="a-button btn btn-primary btn-lg" href= "https://github.com/gfolbe318/Checkers" target="_blank">Repository</a>
+					</div>
 				</div>
+
+				<hr>
 
 			
-			<div class="tab-pane fade" id="resumeCV" role="tabpanel" aria-labelledby="resumeCV-tab">Here is my resume</div>
-			<div class="tab-pane fade" id="contactMe" role="tabpanel" aria-labelledby="contactMe-tab">Hello</div>
+
+			</div>
 
 
-	
+		<div class="tab-pane fade" id="resumeCV" role="tabpanel" aria-labelledby="resumeCV-tab">Here is my resume</div>
+		<div class="tab-pane fade" id="contactMe" role="tabpanel" aria-labelledby="contactMe-tab">Hello</div>
 	</div>
 </div>
 

@@ -15,26 +15,15 @@ ul.nav li.active a {
   margin-right: auto;
   margin-left: auto;
   background-color: white;
-  border-bottom-right-radius: 2rem;
-  border-bottom-left-radius: 2rem;
+  border-radius: 2rem;
 }
 
-.pad-10px{
-  padding: 10px;
+.pad-header{
+  padding-top: 20px;
 }
 
-.pad-img{
-  padding: 15px;
-}
-
-.pull-left-img{
-  width: 35%;
-  float: left;
-}
-
-.pull-right-text{
-  width:65%;
-  float: right;
+.sub-header{
+  padding-left: 20px;
 }
 
 .row:after {
@@ -46,4 +35,17 @@ ul.nav li.active a {
 .plain-ul{
   list-style:none;
   padding-left:0;
+  font-size: 20px;
 }
+
+.a-button{
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+.a-button:hover{
+  text-decoration: none;
+  color:white;
+}
+

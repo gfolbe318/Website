@@ -5,6 +5,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
+  --main: rgb(112, 174, 231);
+
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -66,7 +68,8 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: rgb(112, 174, 231);
+  background-color: var(--main);
+
 }
 
 [tabindex="-1"]:focus {
@@ -2300,7 +2303,7 @@ textarea.form-control {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 0.25rem;
+  border-radius: 2rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -2333,15 +2336,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: white;
+  border-color: var(--main);
+
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #0069d9;
-  border-color: #0062cc;
+  background-color: var(--main);
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -3873,8 +3875,9 @@ input[type="button"].btn-block {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-left: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   list-style: none;
+
 }
 
 .nav-link {
@@ -3894,6 +3897,8 @@ input[type="button"].btn-block {
   border: 1px solid transparent;
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
@@ -3913,7 +3918,7 @@ input[type="button"].btn-block {
 
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
-  border-top-left-radius: 10px;
+  border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
@@ -3925,6 +3930,7 @@ input[type="button"].btn-block {
 .nav-pills .show > .nav-link {
   color: #fff;
   background-color: black;
+
 }
 
 .nav-fill .nav-item {
