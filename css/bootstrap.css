@@ -6047,7 +6047,7 @@ button.close {
 }
 
 .align-middle {
-  vertical-align: middle !important;
+  vertical-align: middle;
 }
 
 .align-bottom {

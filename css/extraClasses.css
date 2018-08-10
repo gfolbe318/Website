@@ -11,12 +11,39 @@ ul.nav li.active a {
 }
 
 .info-page{
-
   width: 100%;
   margin-right: auto;
   margin-left: auto;
   background-color: white;
-  height: 100%;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
 
-        
+.pad-10px{
+  padding: 10px;
+}
+
+.pad-img{
+  padding: 15px;
+}
+
+.pull-left-img{
+  width: 35%;
+  float: left;
+}
+
+.pull-right-text{
+  width:65%;
+  float: right;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.plain-ul{
+  list-style:none;
+  padding-left:0;
 }
