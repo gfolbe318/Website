@@ -16,6 +16,7 @@ ul.nav li.active a {
   margin-left: auto;
   background-color: white;
   border-radius: 2rem;
+  margin-bottom: 5rem;
 }
 
 .pad-header{
@@ -34,7 +35,7 @@ ul.nav li.active a {
 
 .plain-ul{
   list-style:none;
-  padding-left:0;
+  padding-left: 0;
   font-size: 20px;
 }
 
@@ -49,3 +50,18 @@ ul.nav li.active a {
   color:white;
 }
 
+.divider{
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.pull-right{
+  text-align: right;
+  font-style: italic;
+  font-size: 12px;
+  margin-right: 20px;
+}
+
+.header-remove-pad{
+  margin-bottom: 0;
+}
