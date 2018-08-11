@@ -35,7 +35,8 @@ ul.nav li.active a {
 
 .plain-ul{
   list-style:none;
-  padding-left: 0;
+  padding-left:.25rem;
+  padding-right: .25rem;
   font-size: 20px;
 }
 
@@ -64,4 +65,54 @@ ul.nav li.active a {
 
 .header-remove-pad{
   margin-bottom: 0;
+}
+
+.pad-button{
+  padding-left: 1.15rem;
+}
+
+.aboutMe{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+.typewriter h2 {
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid black; /* The typwriter cursor */
+  white-space: initial; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+
+#myBtn {
+ display:none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
 }
