@@ -5,8 +5,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
-  --main: rgb(112, 174, 231);
-
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -68,8 +66,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background: linear-gradient(135deg, yellow, blue);
-
+  background-color: #fff;
 }
 
 [tabindex="-1"]:focus {
@@ -583,7 +580,7 @@ pre code {
 }
 
 .container-fluid {
-  width: 90%;
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -2303,6 +2300,7 @@ textarea.form-control {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
+  border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -2335,14 +2333,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  background-color: white;
-  border-color: var(--main)
-
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: var(--main);
+  background-color: #0069d9;
+  border-color: #0062cc;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -2917,8 +2916,7 @@ fieldset:disabled a.btn {
 
 .btn-block {
   display: block;
-  width: 90%;
-  margin:auto;
+  width: 100%;
 }
 
 .btn-block + .btn-block {
@@ -3875,14 +3873,13 @@ input[type="button"].btn-block {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-left: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   list-style: none;
-
 }
 
 .nav-link {
   display: block;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
 }
 
 .nav-link:hover, .nav-link:focus {
@@ -3893,16 +3890,22 @@ input[type="button"].btn-block {
   color: #6c757d;
 }
 
+.nav-tabs {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: -1px;
+}
+
 .nav-tabs .nav-link {
   border: 1px solid transparent;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
 }
 
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  background-color: rgb(54, 119, 180);
+  border-color: #e9ecef #e9ecef #dee2e6;
 }
 
 .nav-tabs .nav-link.disabled {
@@ -3913,7 +3916,9 @@ input[type="button"].btn-block {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
+  color: #495057;
   background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
 }
 
 .nav-tabs .dropdown-menu {
@@ -3929,8 +3934,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: black;
-
+  background-color: #007bff;
 }
 
 .nav-fill .nav-item {
@@ -3964,7 +3968,7 @@ input[type="button"].btn-block {
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: justify;
-  justify-content: right;
+  justify-content: space-between;
   padding: 0.5rem 1rem;
 }
 
@@ -4374,8 +4378,8 @@ input[type="button"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border-radius:2rem;
-  text-align: left;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
 }
 
 .card > hr {
@@ -6053,7 +6057,7 @@ button.close {
 }
 
 .align-middle {
-  vertical-align: middle;
+  vertical-align: middle !important;
 }
 
 .align-bottom {
